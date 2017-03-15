@@ -1,0 +1,140 @@
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0px;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	color: #222;
+	line-height: 24px;
+}
+
+a{text-decoration: none; color:black; padding: 10px;}
+a:hover{text-decoration: underline;}
+.content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.clear{clear:both;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.top-bar{
+	float: right;
+	padding: 10px;
+	line-height: 50px;
+	height: 50px;
+}
+
+.top-bar a span.small{
+	-moz-border-radius: 20px;
+    border-radius: 20px;
+	color:white;
+    padding-left:7px;
+    padding-right:7px;
+    padding-top:3px;
+    padding-bottom:3px;
+	background-color:#db4437;
+}
+
+.top-bar a span.big{
+	-moz-border-radius: 20px;
+    border-radius: 20px;
+	color:white;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:11px;
+    padding-bottom:11px;
+	background-color:green;
+}
+.container{max-width: 960px; padding-top: 109px; margin: 0 auto; text-align: center;}
+
+.form-wrap{
+	padding:5px 10px;
+	box-shadow: 0px 0px 2px 0px;
+	max-width: 528px;
+	margin:0 auto;
+}
+
+.form-wrap input{
+	height: 34px;
+	width: 503px;
+	border:none;
+}
+
+.form-wrap input:focus{
+	outline:none;
+}
+
+.action-buttons{
+	margin-top:18px;
+	padding:5px;
+	height: 36px;
+	line-height: 27px;
+	margin-bottom: 10px;
+}
+
+.button{
+	height: 36px;
+	line-height: 27px;
+	background-color: #f2f2f2;
+	padding: 10px;
+	color: #757575;
+}
+.button:hover{
+	background-color: #e8e8e8;
+	color: #ccc;
+}
+.button a:hover{
+	text-decoration: none;
+}
+
+.form-bottom{
+	margin-top: 12px;
+}
+
+.form-bottom a{
+	color:blue;
+	padding:5px;
+}
+.form-bottom a:hover{
+	text-decoration: underline;
+}
+
+.footer{
+	position: relative;
+	display: block;
+	height:40px;
+	
+}
+
+.footer li{
+	display: inline-block;
+	float: left;
+	list-style-type: none;
+}
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .form-wrap input{
+		max-width: 100% !important;
+    }
+}
